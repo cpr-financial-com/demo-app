@@ -15,8 +15,8 @@
     "build": "react-scripts build",
     "test": "cypress run",
     "eject": "react-scripts eject",
-    "serve": "static build",
-    "ci": "npm install && npm run build && start-server-and-test serve http://localhost:8080 test"
+    "serve": "static build -p 7070",
+    "ci": "npm install && npm run build && start-server-and-test serve http://localhost:7070 test"
   },
   "eslintConfig": {
     "extends": "react-app"

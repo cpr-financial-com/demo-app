@@ -4,5 +4,5 @@ const repo = process.argv[3];
 const sha = process.argv[4];
 
 (async ()=>{
-    await axios.get(`http://localhost:8080/ci-callback?branch=${branch}&owner=${owner}&repo=${repo}&sha=${sha}`);
+    await axios.get(`http://localhost:8080/ci-callback?owner=${owner}&repo=${repo}&sha=${sha}`);
 })();
